@@ -41,6 +41,7 @@
   RewriteCond %{REQUEST_FILENAME} !\/$
 
   # Rewrite all requests to the root
-  RewriteRule ^(.*) /
+  RewriteRule ^(.*)$ /
+  # RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
 
 </ifModule>
