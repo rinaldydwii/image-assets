@@ -6,8 +6,12 @@
 
   # Make apache follow sym links to files
   Options +FollowSymLinks
+  # Disable directory browsing 
+  Options -Indexes
+  # Hide the contents of directories
+  IndexIgnore *
   # If somebody opens a folder, hide all files from the resulting folder list
-  IndexIgnore */*
+  # IndexIgnore */*
 
   #######################################################################
   # REWRITING                                                           #
