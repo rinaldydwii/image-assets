@@ -2,5 +2,7 @@
   Options +FollowSymLinks
   RewriteEngine On
   RewriteBase /
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*) https://%{HTTP_HOST}/$1 [R,L]
   RewriteRule .* /index.php  [L]
 </IfModule>
