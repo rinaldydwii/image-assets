@@ -7,7 +7,7 @@ $newWidth = isset($_GET['w']) ? $_GET['w'] : '';
 $newHeight = isset($_GET['h']) ? $_GET['h'] : '';
 
 $pathUrl = explode('?', $_SERVER['REQUEST_URI'])[0];
-$file = file_get_contents('/users/avatars/1.jpeg');
+$file = file_get_contents('users/avatars/1.jpeg');
 echo $file;
 // echo $pathUrl;
 
