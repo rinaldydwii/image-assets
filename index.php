@@ -7,9 +7,8 @@ $newWidth = isset($_GET['w']) ? $_GET['w'] : '';
 $newHeight = isset($_GET['h']) ? $_GET['h'] : '';
 
 $pathUrl = explode('?', $_SERVER['REQUEST_URI'])[0];
-$file = file_get_contents('..'.$pathUrl);
+$file = file_get_contents($pathUrl);
 echo $file;
-echo "Test";
 
 
 [$width, $height] = getimagesize('../users/avatars/avatar.jpg');
