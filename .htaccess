@@ -11,6 +11,7 @@
 # </IfModule>
 
 RewriteEngine On
+RewriteBase /
 # Redirect to SSL version
 # Note: %{HTTP:X-Forwarded-Proto} is specific for Heroku
 RewriteCond %{HTTPS} off
