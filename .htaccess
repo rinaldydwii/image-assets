@@ -1,17 +1,17 @@
-# <IfModule mod_rewrite.c>
-#   Options +FollowSymLinks
-#   RewriteEngine On
-#   RewriteBase /
-#   # RewriteCond %{HTTP:X-Forwarded-Proto} !https
-#   # RewriteRule ^(.*) https://%{HTTP_HOST}/$1 [R,L]
-#   RewriteRule .* /index.php [L]
-# </IfModule>
-
 <IfModule mod_rewrite.c>
- RewriteEngine On
- RewriteBase /
- RewriteRule ^route\.php$ - [L]
- RewriteCond %{REQUEST_FILENAME} !-f
- RewriteCond %{REQUEST_FILENAME} !-d
- RewriteRule . /route.php [L]
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteBase /
+  # RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  # RewriteRule ^(.*) https://%{HTTP_HOST}/$1 [R,L]
+  RewriteRule . /index.php [L]
 </IfModule>
+
+# <IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteBase /
+#  RewriteRule ^route\.php$ - [L]
+#  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteRule . /route.php [L]
+# </IfModule>
