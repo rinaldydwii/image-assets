@@ -1,0 +1,13 @@
+{
+    "name": "imageassets/rinaldydwii",
+    "description": "Image Assets PHP",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Rinaldy Dwi Istanto",
+            "email": "rinaldydwii@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
