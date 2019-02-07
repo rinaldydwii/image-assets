@@ -27,3 +27,6 @@ if ($file) {
     // Return Image
     echo $imagick->getImageBlob();
 }
+else {
+    echo "File not found!";
+}
