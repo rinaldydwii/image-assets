@@ -1,16 +1,7 @@
 {
-    "name": "imageassets/rinaldydwii",
-    "description": "Image Assets PHP",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Rinaldy Dwi Istanto",
-            "email": "rinaldydwii@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
+    "name": "image-assets",
+    "description": "Image Assets Server",
     "require": {
-        "php": "^7.1.3",
-        "calcinai/php-imagick": "dev-master"
+        "php": "^7.1.3"
     }
 }

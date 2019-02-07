@@ -4,51 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "188d2dd36d62dfdea006d04dd6134372",
-    "packages": [
-        {
-            "name": "calcinai/php-imagick",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/calcinai/php-imagick.git",
-                "reference": "0171fec0a356c5d4b9421223d5c2c79ece32a08c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/calcinai/php-imagick/zipball/0171fec0a356c5d4b9421223d5c2c79ece32a08c",
-                "reference": "0171fec0a356c5d4b9421223d5c2c79ece32a08c",
-                "shasum": ""
-            },
-            "suggest": {
-                "ext-imagick": "Native extension"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Imagick": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Calcinai",
-                    "email": "michael@calcin.ai"
-                }
-            ],
-            "description": "PHP wrapper for command line ImageMagick utils compatible with PECL::Imagick",
-            "time": "2017-12-19T01:31:38+00:00"
-        }
-    ],
+    "content-hash": "9b9586dc48058c8a829e1e48ae726ece",
+    "packages": [],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "calcinai/php-imagick": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
