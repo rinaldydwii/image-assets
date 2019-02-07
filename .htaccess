@@ -11,9 +11,7 @@
 # </IfModule>
 
 RewriteEngine On
-RewriteBase /
-# Redirect to SSL version
-# Note: %{HTTP:X-Forwarded-Proto} is specific for Heroku
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:X-Forwarded-Proto} !https 
-RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI}/$1 [R=301,L]
+# RewriteCond %{DOCUMENT_ROOT} !-f
+# RewriteRule !\.(js|ico|gif|jpg|png|css|html|swf|flv|xml)$ index.php [QSA,L]
+RewriteCond $1 !^(index\.php)
+RewriteRule ^(.*)$ /index.php/$1 [L]
