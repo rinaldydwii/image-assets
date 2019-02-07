@@ -1,10 +1,9 @@
 <?php
-header("content-type: image/jpg");
 
 // Get Path URL
 $pathUrl = ltrim(explode('?', $_SERVER['REQUEST_URI'])[0], '/');
 // Get Image File
-$file = file_get_contents($pathUrl);
+$file = $pathUrl ? file_get_contents($pathUrl) : null;
 
 if ($file) {
     // Image Size
@@ -25,6 +24,7 @@ if ($file) {
     // Resize Image
     $imagick -> resizeImage($newWidth, $newHeight, Imagick::FILTER_POINT, 1);
     // Return Image
+    header("content-type: image/jpg");
     echo $imagick->getImageBlob();
 }
 else {
