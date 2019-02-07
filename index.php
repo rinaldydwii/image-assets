@@ -23,7 +23,7 @@ if ($file) {
     // Resize Image
     $imagick -> resizeImage($newWidth, $newHeight, Imagick::FILTER_POINT, 1);
     // Return Image
-    header("content-type: image/jpg");
+    // header("content-type: image/jpg");
     echo $imagick->getImageBlob();
 }
 else {
